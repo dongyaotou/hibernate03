@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!--注意这是hibernate的映射文件
+以及注意hibernate映射文件的后缀名字   .hbm.xml
+package: 需要映射的实体类所在包
+
+
+
+-->
+
+
+<!--注意这边到了包名就行了-->
+<hibernate-mapping package="cn.nb.bean">
+
+    <class name="Teacher" table="teacher" lazy="true">
+        <id name="id" column="id">
+            <generator class="assigned"/>
+        </id>
+        <property name="name"/>
+
+    </class>
+
+
+
+
+</hibernate-mapping>
